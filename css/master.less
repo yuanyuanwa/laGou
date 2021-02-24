@@ -1,0 +1,222 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+// 版心
+.mian {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+// ::after是指在元素后面添加内容
+.clearFixed::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+// 去掉小黑点
+li {
+    list-style: none;
+}
+
+// 去掉下划线
+a {
+    text-decoration: none;
+    color: black;
+}
+
+// logo.png图片引用定位共有部分
+.imagelogo {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 60px 108px;
+}
+
+.header {
+    height: 160px;
+
+    // background-color: aqua;
+    .header_top {
+        height: 40px;
+        background-color: #32373e;
+
+        .top_content {
+            .mian();
+            // &::after {
+            //     content: "";
+            //     display: block;
+            //     clear: both;
+            // }
+            height: 40px;
+
+            .conLeft {
+                .fl();
+                height: 40px;
+                //文字上下居中
+                line-height: 40px;
+
+                // 先随便设置一个宽度，等会儿靠内容给撑起来后要注释掉
+                // width: 400px;
+                .leftTxt1 {
+                    .fl();
+
+                    .logo {
+                        font-size: 22px;
+                        color: #00b38a;
+                        margin-right: 32px;
+                    }
+
+                    .city {
+                        font-size: 14px;
+                        color: #0dca9f;
+                        margin-right: 14px;
+                    }
+
+                    .changeCity {
+                        font-size: 14px;
+                        color: #afb5c0;
+                        margin-right: 36px;
+                    }
+                }
+
+                .ulList {
+                    .fl();
+
+                    li {
+                        font-size: 14px;
+                        float: left;
+                        // 文字左右居中
+                        text-align: center;
+
+                        a {
+                            display: block;
+                            width: 70px;
+
+                            &:hover {
+                                color: #fff;
+                            }
+
+                            color:gray;
+                        }
+
+                        &:first-child {
+                            background-color: black;
+
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .conRight {
+                .fr();
+                height: 40px;
+                // 先随便设置一个宽度，等会儿靠内容给撑起来后要注释掉
+                // width: 400px;
+                ul {
+                    li {
+                        .fl();
+                        line-height: 40px;
+
+                        font-size: 12px;
+
+                        a {
+                            display: block;
+                            &:hover {
+                                color: #fff;
+                            }
+
+                            .people {
+                                .fl();
+                                .imagelogo();
+                                background-position: -9px -32px;
+                                margin: 10px 5px 0px 0px;
+                            }
+
+                            .phone {
+                                .fl();
+                                .imagelogo();
+                                background-position: -30px -32px;
+                                margin: 10px 0px 0px 0px;
+                            }
+                          
+                        }
+
+                        .login {
+                            padding-left: 28px;
+                            color:#93b5c0;
+                        }
+
+                        .login2 {
+                            margin-right: 40px;
+                            color:#93b5c0;
+
+                            span {
+                                margin: 0px 12px;
+                            }
+
+                        }
+                        .app{
+                            color: #08d7a2;
+                            margin-right: 24px;
+                        }
+                        &:last-child{
+                            margin-right: 8px;
+                            a{ 
+                                color:#93b5c0;
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .header_bottom {
+        height: 120px;
+        background-color: #00b38a;
+
+        .bottom_content {
+            .mian();
+            height: 120px;
+            background-color: blue;
+        }
+    }
+}
