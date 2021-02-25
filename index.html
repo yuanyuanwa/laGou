@@ -1,64 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/master.css">
-    <title>拉钩网首页</title>
-</head>
-<body>
-    <!-- 内容主体区域 -->
-    <!-- 头部区域 -->
-    <!-- 搜索区域 -->
-    <!-- 轮播图区域 -->
-    <!-- 内容区域 -->
-    <!-- 底部区域 -->
-    <!-- 所有内容都在1210px宽度之内并且左右居中 版心 -->
-    <div id="box">
-        <div class="header">
-            <div class="header_top">
-                <div class="top_content clearFixed">
-                    <div class="conLeft clearFixed">
-                        <div class="leftTxt1">
-                            <!-- a*3加回车 -->
-                            <!-- a是内联元素 -->
-                            <a href="" class="logo">拉钩</a>
-                            <a href="" class="city">全国站</a>
-                            <a href="" class="changeCity">[切换城市]</a>
-                        </div>
-                        <ul class="ulList clearFixed">
-                            <li><a href="https://baidu.com" target="_blank">首页</a></li>
-                            <li><a href="#">公司</a></li>
-                            <li><a href="#">校园招聘</a></li>
-                            <li><a href="#">职位</a></li>
-                            <li><a href="#">言职</a></li>
-                            <li><a href="#">课程</a></li>
-                            <li><a href="#">app</a></li>
-                        </ul>
-                    </div>
-                    <div class="conRight">
-                        <ul class="ulist clearFixed">
-                            <!-- li*4>a -->
-                            <li><a href="" class="login"><span class="people"></span>登陆</a></li>
-                            <li><a href="" class="login2">
-                                <span>|</span>注册</a></li>
-                            <li><a href="" class="app"> <span class="phone"></span>拉钩APP</a></li>
-                            <li><a href="" >进入企业版</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="header_bottom">
-                <div class="bottom_content"></div>
-            </div>
-        </div>
-        <div class="search"></div>
-        <div class="banner"></div>
-        <div class="content"></div>
-        <div class="footer"></div>
-    </div>
 
-    <div class="a"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/master.css">
+  <title>拉钩网首页</title>
+</head>
+
+<body>
+  <!-- 内容主体区域 -->
+  <!-- 头部区域 -->
+  <!-- 搜索区域 -->
+  <!-- 轮播图区域 -->
+  <!-- 内容区域 -->
+  <!-- 底部区域 -->
+  <!-- 所有内容都在1210px宽度之内并且左右居中 版心 -->
+  <div id="box">
+    <!-- .header回车 -->
+    <div class="header">
+      <div class="header_top">
+        <div class="top_content clearFixed">
+          <div class="conLeft clearFixed">
+            <div class="leftTxt1">
+              <!-- a*3加回车 -->
+              <!-- a是内联元素 -->
+              <a href="" class="logo">拉钩</a>
+              <a href="" class="city">全国站</a>
+              <a href="" class="changeCity">[切换城市]</a>
+            </div>
+            <!-- 列表一般都不设置宽度，让内容撑开和padding设置间隔 -->
+            <ul class="ulList clearFixed">
+              <li><a href="https://baidu.com" target="_blank">首页</a></li>
+              <li><a href="#">公司</a></li>
+              <li><a href="#">校园招聘</a></li>
+              <li><a href="#">职位</a></li>
+              <li><a href="#">言职</a></li>
+              <li><a href="#">课程</a></li>
+              <li><a href="#">app</a></li>
+            </ul>
+          </div>
+          <div class="conRight">
+            <ul class="ulist clearFixed">
+              <!-- li*4>a -->
+              <li><a href="" class="login"><span class="people"></span>登陆</a></li>
+              <li><a href="" class="login2">
+                  <span>|</span>注册</a></li>
+              <li><a href="" class="app"> <span class="phone"></span>拉钩APP</a></li>
+              <li><a href="">进入企业版</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="bottom_content clearFixed">
+          <div class="conLeft">
+            <img src="./images/slogan.png" alt="">
+            <div class="txtcon">1097334家公司｜8275639个职位，在拉勾等你</div>
+            <!-- <div class="txtBox">6666666家公司｜98989898个职位在拉钩等你</div> -->
+          </div>
+          <div class="conRight">
+            <div class="btnBox">
+              <input type="text" placeholder="输入手机号" class="fl txt1">
+              <p class="fl pBtn">
+                <input type="text" placeholder="验证码" class="txt2">
+                |
+                <a href="" class="aTxt2">获取</a>
+              </p>
+              <input type="submit" value="登陆/注册" class="fl btnSub">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="searCon">
+        <div class="sear clearFixed">
+          <input type="text" placeholder="搜索职位、公司或地点" class="searInp">
+          <a href="" class="btn">搜索</a>
+        </div>
+        <ul class="searList clearFixed">
+          <li><a href="">热门搜索:</a></li>
+          <li><a href="">24小时极速入职</a></li>
+          <li><a href="">名企校招早班车</a></li>
+          <li><a href="">Java面试</a></li>
+          <li><a href="">架构设计</a></li>
+          <li><a href="">数据分析</a></li>
+          <li><a href="">PHP</a></li>
+          <li><a href="">C++</a></li>
+       </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="bannCon clearFixed">
+        <div class="banLeft">
+          <div class="first">           
+              <ul class="banList">
+                <li>
+                  <a href="">技术</a>
+                  <a href="">Java</a>
+                  <a href="">PHP</a>
+                  <a href="">C++</a>
+                  <a href="">区块链</a>
+                 <i class="arrow"></i>
+                </li>
+              </ul>
+              <div class="firstV"></div>
+            </div>
+           
+             
+            </div>
+          </div>
+          <!-- <ul class="banList">
+            <li>
+              <a href="">技术</a>
+              <a href="">Java</a>
+              <a href="">PHP</a>
+              <a href="">C++</a>
+              <a href="">区块链</a>
+             <i class="arrow"></i>
+            </li>
+          </ul> -->
+        </div>
+        <div class="banRight"></div>
+      </div>
+    </div>
+    <div class="content"></div>
+    <div class="footer"></div>
+  </div>
+
+  <div class="a"></div>
 </body>
+
 </html>

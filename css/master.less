@@ -1,6 +1,6 @@
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 p,
@@ -16,207 +16,461 @@ dd,
 ol,
 ul,
 li {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 // 版心
 .mian {
-    width: 1200px;
-    margin: 0px auto;
+  width: 1200px;
+  margin: 0px auto;
 }
 
 .fl {
-    float: left;
+  float: left;
 }
 
 .fr {
-    float: right;
+  float: right;
 }
 
 // ::after是指在元素后面添加内容
 .clearFixed::after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 
 }
 
 // 去掉小黑点
 li {
-    list-style: none;
+  list-style: none;
 }
 
 // 去掉下划线
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 // logo.png图片引用定位共有部分
 .imagelogo {
-    width: 18px;
-    height: 18px;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-size: 60px 108px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 60px 108px;
+}
+input{
+  border: none;
 }
 
 .header {
-    height: 160px;
+  height: 160px;
 
-    // background-color: aqua;
-    .header_top {
+  // background-color: aqua;
+  .header_top {
+    height: 40px;
+    background-color: #32373e;
+
+    .top_content {
+      .mian();
+      // &::after {
+      //     content: "";
+      //     display: block;
+      //     clear: both;
+      // }
+      height: 40px;
+
+      .conLeft {
+        .fl();
         height: 40px;
-        background-color: #32373e;
+        //文字上下居中
+        line-height: 40px;
 
-        .top_content {
-            .mian();
-            // &::after {
-            //     content: "";
-            //     display: block;
-            //     clear: both;
-            // }
-            height: 40px;
+        // 先随便设置一个宽度，等会儿靠内容给撑起来后要注释掉
+        // width: 400px;
+        .leftTxt1 {
+          .fl();
 
-            .conLeft {
+          .logo {
+            font-size: 22px;
+            color: #00b38a;
+            margin-right: 32px;
+          }
+
+          .city {
+            font-size: 14px;
+            color: #0dca9f;
+            margin-right: 14px;
+          }
+
+          .changeCity {
+            font-size: 14px;
+            color: #afb5c0;
+            margin-right: 36px;
+          }
+        }
+
+        .ulList {
+          .fl();
+
+          li {
+            font-size: 14px;
+            float: left;
+            // 文字左右居中
+            text-align: center;
+
+            a {
+              display: block;
+              // width: 70px;
+              padding: 0 20px;
+
+              &:hover {
+                color: #fff;
+              }
+
+              color:gray;
+            }
+
+            &:first-child {
+              background-color: black;
+
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+
+      }
+
+      .conRight {
+        .fr();
+        height: 40px;
+
+        // 先随便设置一个宽度，等会儿靠内容给撑起来后要注释掉
+        // width: 400px;
+        ul {
+          li {
+            .fl();
+            line-height: 40px;
+
+            font-size: 14px;
+
+            a {
+              display: block;
+
+              &:hover {
+                color: #fff;
+              }
+
+              .people {
                 .fl();
-                height: 40px;
-                //文字上下居中
-                line-height: 40px;
+                .imagelogo();
+                background-position: -9px -32px;
+                margin: 10px 5px 0px 0px;
+              }
 
-                // 先随便设置一个宽度，等会儿靠内容给撑起来后要注释掉
-                // width: 400px;
-                .leftTxt1 {
-                    .fl();
-
-                    .logo {
-                        font-size: 22px;
-                        color: #00b38a;
-                        margin-right: 32px;
-                    }
-
-                    .city {
-                        font-size: 14px;
-                        color: #0dca9f;
-                        margin-right: 14px;
-                    }
-
-                    .changeCity {
-                        font-size: 14px;
-                        color: #afb5c0;
-                        margin-right: 36px;
-                    }
-                }
-
-                .ulList {
-                    .fl();
-
-                    li {
-                        font-size: 14px;
-                        float: left;
-                        // 文字左右居中
-                        text-align: center;
-
-                        a {
-                            display: block;
-                            width: 70px;
-
-                            &:hover {
-                                color: #fff;
-                            }
-
-                            color:gray;
-                        }
-
-                        &:first-child {
-                            background-color: black;
-
-                            a {
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
+              .phone {
+                .fl();
+                .imagelogo();
+                background-position: -30px -32px;
+                margin: 10px 0px 0px 0px;
+              }
 
             }
 
-            .conRight {
-                .fr();
-                height: 40px;
-                // 先随便设置一个宽度，等会儿靠内容给撑起来后要注释掉
-                // width: 400px;
-                ul {
-                    li {
-                        .fl();
-                        line-height: 40px;
-
-                        font-size: 12px;
-
-                        a {
-                            display: block;
-                            &:hover {
-                                color: #fff;
-                            }
-
-                            .people {
-                                .fl();
-                                .imagelogo();
-                                background-position: -9px -32px;
-                                margin: 10px 5px 0px 0px;
-                            }
-
-                            .phone {
-                                .fl();
-                                .imagelogo();
-                                background-position: -30px -32px;
-                                margin: 10px 0px 0px 0px;
-                            }
-                          
-                        }
-
-                        .login {
-                            padding-left: 28px;
-                            color:#93b5c0;
-                        }
-
-                        .login2 {
-                            margin-right: 40px;
-                            color:#93b5c0;
-
-                            span {
-                                margin: 0px 12px;
-                            }
-
-                        }
-                        .app{
-                            color: #08d7a2;
-                            margin-right: 24px;
-                        }
-                        &:last-child{
-                            margin-right: 8px;
-                            a{ 
-                                color:#93b5c0;
-                                &:hover {
-                                    color: #fff;
-                                }
-                            }
-                        }
-
-                    }
-                }
+            .login {
+              padding-left: 28px;
+              color: #93b5c0;
             }
+
+            .login2 {
+              margin-right: 40px;
+              color: #93b5c0;
+
+              span {
+                margin: 0px 12px;
+              }
+
+            }
+
+            .app {
+              color: #08d7a2;
+              margin-right: 24px;
+            }
+
+            &:last-child {
+              margin-right: 8px;
+
+              a {
+                color: #93b5c0;
+
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
 
-    .header_bottom {
+  .header_bottom {
+    height: 120px;
+    background-color: #00b38a;
+
+    .bottom_content {
+      .mian();
+      height: 120px;
+      .conLeft{
+        .fl();
+        position: relative;
+        width: 566px;
         height: 120px;
-        background-color: #00b38a;
+        background:url(../images/people.png) no-repeat;
+        // 占div宽的226px，高为占满div即100%
+        background-size: 228px 100%;
+        
+          // position: absolute;
+          // top: 36px;
+          // left: 237px;
+          // height: 60px;
+          // 如果不是在html里引入slogan.png，而是像people.png一样在css里引入的话，就需要设置宽和高
+          img{
+            position: absolute;
+          top: 36px;
+          left: 237px;
+          height: 60px;
+           width: 334px;
+           height: 30px;
+           display: block;
+           margin-bottom: 2px;
+          }
+          .txtcon{ 
+            position: absolute;
+             font-size: 14px;
+             color: white; 
+             top: 71px;
+            left: 237px;
+          }     
+          // p{
+          //   display: block;
+          //   font-size: 12px;
 
-        .bottom_content {
-            .mian();
-            height: 120px;
-            background-color: blue;
+          // } 
+      }
+      .conRight{
+        .fr();
+        width: 474px;
+        height: 120px;
+        position: relative;
+        .btnBox{
+          height: 36px;
+
+          font-size: 14px;
+          // 让元素上下居中
+          position: absolute;
+          top:50%;
+          margin-top: -18px;//高度的一半
+          width: 100%;
+
+          .txt1{
+            height: 36px;
+            width: 193px;
+            margin-right: 8px;
+            text-indent: 60px;
+            &::-webkit-input-placeholder{
+              color: gainsboro;
+            }
+            outline: none; // 去除选中状态边框
+          }
+          .pBtn{
+             height: 36px;
+              width: 148px;
+              margin-right: 10px;
+              background-color: white;
+              color: gainsboro;
+            .txt2{
+              height: 36px;
+              width: 94px;
+              text-indent: 10px;
+              &::-webkit-input-placeholder{
+                color: gainsboro;
+              }
+              outline: none; // 去除选中状态边框
+            }
+            .aTxt2{
+              padding: 6px 4px 9px;
+              color: #00b38a;
+              cursor:pointer;
+            }
+          }
+          .btnSub{
+            width: 106px;
+            height: 36px;//边框占里2像素
+            border: 1px solid #ccefe7;
+            background: transparent;
+            color: #fff;
+            outline: none; // 去除选中状态边框
+            &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            }
+          }
+          
+          
         }
+      }
+       
     }
+  }
+}
+
+.search{
+  // .mian();
+  height: 132px;
+  background: #f2f5f4;
+  .searCon{
+    .mian();
+    height: 102px;
+
+    // 调整子元素的位置，高度也要减去30px
+    padding-top: 30px;
+    .sear{
+      width: 937px;
+      // height: 47px;
+      margin-left: 133px;
+      background-color: #00b38a;
+      .searInp{
+        .fl();
+        width: 794px;
+        height: 45px;
+        border: 1px solid #e8e8e8;
+        &::-webkit-input-placeholder{
+          font-size: 16px;
+        }
+        text-indent: 14px;
+      }
+      .btn{
+        .fr();
+        width:141px ;
+        background-color:transparent;
+        line-height: 47px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        cursor:pointer;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+          }
+      }
+    }
+    .searList{
+      margin-left: 133px;
+      line-height: 38px;
+      li{
+        .fl();
+        padding-right: 22px;
+        a{
+          color:#00c1cc;
+          &:hover {
+            text-shadow:1px 1px 3px gainsboro ;
+            color:#00c1cc;
+            }
+        }
+        
+        &:first-child{
+          a{
+            color:#778ab9;
+          }
+        }
+      }
+      
+    }
+  }
+
+}
+.bannCon{
+  .mian();
+  height: 430px;
+  // background: pink;
+  .banLeft{
+    .fl();
+    width: 300px;
+    height: 430px;
+    // background: skyblue;
+    .first{
+      position: relative;
+      width: 300px;
+      height: 40px;
+      border-radius: 2px;
+      // z-index: 100;
+      // box-shadow: -5px 0px 4px  2px gainsboro,
+      //             -5px 0px 4px 2px gainsboro;
+      // background-color: hotpink;
+      &:hover{
+        // background-color: red;
+        box-shadow: gainsboro 0 0 4px 2px ;
+      }
+      &:hover .firstV{
+        display: inline-block;
+      }
+      .banList{
+          li{position: relative;
+            // background-color: chartreuse;
+            line-height: 40px;
+            a{
+              &:first-child{
+                font-size: 18px;
+                color:  #333;;
+              }
+              font-size: 14px;
+              color: #333;
+              padding: 0px 8px;
+            }
+            .arrow{
+              position: absolute;
+              top:11px;
+              right: 0px;
+              display: inline-block;
+              width: 9px;
+              height: 17px;
+              background-image: url(../images/arrow.png);
+              background-repeat: no-repeat;
+              background-position: 3px 4px;
+              background-size: 6px 11px;
+            }
+          }
+      }
+      
+      .firstV{
+        position: absolute;
+        top: 0px;
+        left: 290px;
+        height: 100px;
+        width: 200px;
+        // background-color: #00c1cc;
+        box-shadow: gainsboro 0 0 4px 2px ;
+        display: none;
+        // background-color: #00c1cc;
+        // z-index: -1;
+        // z-index: 10;
+        z-index: 10;
+        background: #fff;
+        box-shadow: 0 0 4px 2px gainsboro ;
+        border-radius: 2px;
+        border-top-left-radius: 0;
+      }
+      
+    }
+   
+  }
+  .banRight{
+    .fr();
+    width: 840px;
+    height: 430px;
+    background: yellowgreen;
+  }
 }

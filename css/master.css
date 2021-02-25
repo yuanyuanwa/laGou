@@ -47,6 +47,9 @@ a {
   background-repeat: no-repeat;
   background-size: 60px 108px;
 }
+input {
+  border: none;
+}
 .header {
   height: 160px;
 }
@@ -92,7 +95,7 @@ a {
 }
 .header .header_top .top_content .conLeft .ulList li a {
   display: block;
-  width: 70px;
+  padding: 0 20px;
   color: gray;
 }
 .header .header_top .top_content .conLeft .ulList li a:hover {
@@ -111,7 +114,7 @@ a {
 .header .header_top .top_content .conRight ul li {
   float: left;
   line-height: 40px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .header .header_top .top_content .conRight ul li a {
   display: block;
@@ -171,5 +174,208 @@ a {
   width: 1200px;
   margin: 0px auto;
   height: 120px;
-  background-color: blue;
+}
+.header .header_bottom .bottom_content .conLeft {
+  float: left;
+  position: relative;
+  width: 566px;
+  height: 120px;
+  background: url(../images/people.png) no-repeat;
+  background-size: 228px 100%;
+}
+.header .header_bottom .bottom_content .conLeft img {
+  position: absolute;
+  top: 36px;
+  left: 237px;
+  height: 60px;
+  width: 334px;
+  height: 30px;
+  display: block;
+  margin-bottom: 2px;
+}
+.header .header_bottom .bottom_content .conLeft .txtcon {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  top: 71px;
+  left: 237px;
+}
+.header .header_bottom .bottom_content .conRight {
+  float: right;
+  width: 474px;
+  height: 120px;
+  position: relative;
+}
+.header .header_bottom .bottom_content .conRight .btnBox {
+  height: 36px;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  width: 100%;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .txt1 {
+  height: 36px;
+  width: 193px;
+  margin-right: 8px;
+  text-indent: 60px;
+  outline: none;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .txt1::-webkit-input-placeholder {
+  color: gainsboro;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .pBtn {
+  height: 36px;
+  width: 148px;
+  margin-right: 10px;
+  background-color: white;
+  color: gainsboro;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .pBtn .txt2 {
+  height: 36px;
+  width: 94px;
+  text-indent: 10px;
+  outline: none;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .pBtn .txt2::-webkit-input-placeholder {
+  color: gainsboro;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .pBtn .aTxt2 {
+  padding: 6px 4px 9px;
+  color: #00b38a;
+  cursor: pointer;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .btnSub {
+  width: 106px;
+  height: 36px;
+  border: 1px solid #ccefe7;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+.header .header_bottom .bottom_content .conRight .btnBox .btnSub:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.search {
+  height: 132px;
+  background: #f2f5f4;
+}
+.search .searCon {
+  width: 1200px;
+  margin: 0px auto;
+  height: 102px;
+  padding-top: 30px;
+}
+.search .searCon .sear {
+  width: 937px;
+  margin-left: 133px;
+  background-color: #00b38a;
+}
+.search .searCon .sear .searInp {
+  float: left;
+  width: 794px;
+  height: 45px;
+  border: 1px solid #e8e8e8;
+  text-indent: 14px;
+}
+.search .searCon .sear .searInp::-webkit-input-placeholder {
+  font-size: 16px;
+}
+.search .searCon .sear .btn {
+  float: right;
+  width: 141px ;
+  background-color: transparent;
+  line-height: 47px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.search .searCon .sear .btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.search .searCon .searList {
+  margin-left: 133px;
+  line-height: 38px;
+}
+.search .searCon .searList li {
+  float: left;
+  padding-right: 22px;
+}
+.search .searCon .searList li a {
+  color: #00c1cc;
+}
+.search .searCon .searList li a:hover {
+  text-shadow: 1px 1px 3px gainsboro ;
+  color: #00c1cc;
+}
+.search .searCon .searList li:first-child a {
+  color: #778ab9;
+}
+.bannCon {
+  width: 1200px;
+  margin: 0px auto;
+  height: 430px;
+}
+.bannCon .banLeft {
+  float: left;
+  width: 300px;
+  height: 430px;
+}
+.bannCon .banLeft .first {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  border-radius: 2px;
+}
+.bannCon .banLeft .first:hover {
+  box-shadow: gainsboro 0 0 4px 2px ;
+}
+.bannCon .banLeft .first:hover .firstV {
+  display: inline-block;
+}
+.bannCon .banLeft .first .banList li {
+  position: relative;
+  line-height: 40px;
+}
+.bannCon .banLeft .first .banList li a {
+  font-size: 14px;
+  color: #333;
+  padding: 0px 8px;
+}
+.bannCon .banLeft .first .banList li a:first-child {
+  font-size: 18px;
+  color: #333;
+}
+.bannCon .banLeft .first .banList li .arrow {
+  position: absolute;
+  top: 11px;
+  right: 0px;
+  display: inline-block;
+  width: 9px;
+  height: 17px;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 3px 4px;
+  background-size: 6px 11px;
+}
+.bannCon .banLeft .first .firstV {
+  position: absolute;
+  top: 0px;
+  left: 290px;
+  height: 100px;
+  width: 200px;
+  box-shadow: gainsboro 0 0 4px 2px ;
+  display: none;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 0 4px 2px gainsboro ;
+  border-radius: 2px;
+  border-top-left-radius: 0;
+}
+.bannCon .banRight {
+  float: right;
+  width: 840px;
+  height: 430px;
+  background: yellowgreen;
 }
