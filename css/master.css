@@ -56,6 +56,11 @@ input {
 .header .header_top {
   height: 40px;
   background-color: #32373e;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
 }
 .header .header_top .top_content {
   width: 1200px;
@@ -169,6 +174,7 @@ input {
 .header .header_bottom {
   height: 120px;
   background-color: #00b38a;
+  padding-top: 40px;
 }
 .header .header_bottom .bottom_content {
   width: 1200px;
@@ -283,7 +289,7 @@ input {
 }
 .search .searCon .sear .btn {
   float: right;
-  width: 141px ;
+  width: 141px;
   background-color: transparent;
   line-height: 47px;
   text-align: center;
@@ -306,7 +312,7 @@ input {
   color: #00c1cc;
 }
 .search .searCon .searList li a:hover {
-  text-shadow: 1px 1px 3px gainsboro ;
+  text-shadow: 1px 1px 3px gainsboro;
   color: #00c1cc;
 }
 .search .searCon .searList li:first-child a {
@@ -316,6 +322,7 @@ input {
   width: 1200px;
   margin: 0px auto;
   height: 430px;
+  padding-top: 100px;
 }
 .bannCon .banLeft {
   float: left;
@@ -325,18 +332,22 @@ input {
 .bannCon .banLeft .first {
   position: relative;
   width: 300px;
-  height: 40px;
-  border-radius: 2px;
+  padding: 0px 10px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 .bannCon .banLeft .first:hover {
-  box-shadow: gainsboro 0 0 4px 2px ;
+  box-shadow: 0 0 4px 2px gainsboro;
 }
 .bannCon .banLeft .first:hover .firstV {
-  display: inline-block;
+  display: block;
+}
+.bannCon .banLeft .first:hover .firstVi {
+  display: block;
 }
 .bannCon .banLeft .first .banList li {
   position: relative;
-  line-height: 40px;
+  line-height: 43px;
 }
 .bannCon .banLeft .first .banList li a {
   font-size: 14px;
@@ -349,8 +360,9 @@ input {
 }
 .bannCon .banLeft .first .banList li .arrow {
   position: absolute;
-  top: 11px;
+  top: 13px;
   right: 0px;
+  z-index: 11;
   display: inline-block;
   width: 9px;
   height: 17px;
@@ -362,20 +374,109 @@ input {
 .bannCon .banLeft .first .firstV {
   position: absolute;
   top: 0px;
-  left: 290px;
-  height: 100px;
-  width: 200px;
-  box-shadow: gainsboro 0 0 4px 2px ;
+  left: 317px;
+  height: 400px;
+  width: 500px;
+  box-shadow: gainsboro 0 0 4px 2px;
   display: none;
-  z-index: 10;
   background: #fff;
-  box-shadow: 0 0 4px 2px gainsboro ;
+  box-shadow: 0 0 4px 2px gainsboro;
   border-radius: 2px;
   border-top-left-radius: 0;
+  z-index: 9;
+}
+.bannCon .banLeft .first .firstVv {
+  height: 200px;
+  width: 500px;
+}
+.bannCon .banLeft .first .firstVi {
+  z-index: 10;
+  position: absolute;
+  background-color: #fff;
+  height: 45px;
+  width: 10px;
+  top: 0.1px;
+  left: 310px;
+  display: none;
 }
 .bannCon .banRight {
   float: right;
   width: 840px;
   height: 430px;
-  background: yellowgreen;
+}
+.bannCon .banRight #parent {
+  position: relative;
+  width: 840px;
+  height: 346px;
+}
+.bannCon .banRight #parent #uls {
+  position: relative;
+  width: 840px;
+  height: 346px;
+  overflow: hidden;
+}
+.bannCon .banRight #parent #uls #img_ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* width: 3000px; 500*5+500 多留出一张图片的宽度！ */
+  width: 3360px;
+  list-style: none;
+}
+.bannCon .banRight #parent #uls #img_ul li {
+  float: left;
+  width: 840px;
+  height: 346px;
+}
+.bannCon .banRight #parent #uls #litCir_ul {
+  position: absolute;
+  right: 400px;
+  bottom: 10px;
+  list-style: none;
+}
+.bannCon .banRight #parent #uls #litCir_ul li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.bannCon .banRight #parent #uls #litCir_ul li.active {
+  background-color: white;
+}
+.bannCon .banRight #parent #uls #litCir_ul li.quiet {
+  background-color: pink;
+}
+.bannCon .banRight #parent #buttons {
+  display: none;
+}
+.bannCon .banRight #parent #buttons div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.bannCon .banRight #parent #buttons #left {
+  left: 5px;
+  background: url(../images/left.png) no-repeat;
+  background-size: 18px 34px;
+  background-position: 9px 3px;
+}
+.bannCon .banRight #parent #buttons #left:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.bannCon .banRight #parent #buttons #right {
+  left: 100%;
+  margin-left: -45px;
+  background: url(../images/right.png) no-repeat;
+  background-size: 18px 34px;
+  background-position: 11px 3px;
+}
+.bannCon .banRight #parent #buttons #right:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }

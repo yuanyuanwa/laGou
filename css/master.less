@@ -61,7 +61,8 @@ a {
   background-repeat: no-repeat;
   background-size: 60px 108px;
 }
-input{
+
+input {
   border: none;
 }
 
@@ -72,8 +73,14 @@ input{
   .header_top {
     height: 40px;
     background-color: #32373e;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
 
     .top_content {
+
       .mian();
       // &::after {
       //     content: "";
@@ -221,256 +228,396 @@ input{
   .header_bottom {
     height: 120px;
     background-color: #00b38a;
+    padding-top: 40px;
 
     .bottom_content {
       .mian();
       height: 120px;
-      .conLeft{
+
+      .conLeft {
         .fl();
         position: relative;
         width: 566px;
         height: 120px;
-        background:url(../images/people.png) no-repeat;
+        background: url(../images/people.png) no-repeat;
         // 占div宽的226px，高为占满div即100%
         background-size: 228px 100%;
-        
-          // position: absolute;
-          // top: 36px;
-          // left: 237px;
-          // height: 60px;
-          // 如果不是在html里引入slogan.png，而是像people.png一样在css里引入的话，就需要设置宽和高
-          img{
-            position: absolute;
+
+        // 如果不是在html里引入slogan.png，而是像people.png一样在css里引入的话，就需要设置宽和高
+        img {
+          position: absolute;
           top: 36px;
           left: 237px;
           height: 60px;
-           width: 334px;
-           height: 30px;
-           display: block;
-           margin-bottom: 2px;
-          }
-          .txtcon{ 
-            position: absolute;
-             font-size: 14px;
-             color: white; 
-             top: 71px;
-            left: 237px;
-          }     
-          // p{
-          //   display: block;
-          //   font-size: 12px;
+          width: 334px;
+          height: 30px;
+          display: block;
+          margin-bottom: 2px;
+        }
 
-          // } 
+        .txtcon {
+          position: absolute;
+          font-size: 14px;
+          color: white;
+          top: 71px;
+          left: 237px;
+        }
+
+        // p{
+        //   display: block;
+        //   font-size: 12px;
+
+        // } 
       }
-      .conRight{
+
+      .conRight {
         .fr();
         width: 474px;
         height: 120px;
         position: relative;
-        .btnBox{
+
+        .btnBox {
           height: 36px;
 
           font-size: 14px;
           // 让元素上下居中
           position: absolute;
-          top:50%;
-          margin-top: -18px;//高度的一半
+          top: 50%;
+          margin-top: -18px; //高度的一半
           width: 100%;
 
-          .txt1{
+          .txt1 {
             height: 36px;
             width: 193px;
             margin-right: 8px;
             text-indent: 60px;
-            &::-webkit-input-placeholder{
+
+            &::-webkit-input-placeholder {
               color: gainsboro;
             }
+
             outline: none; // 去除选中状态边框
           }
-          .pBtn{
-             height: 36px;
-              width: 148px;
-              margin-right: 10px;
-              background-color: white;
-              color: gainsboro;
-            .txt2{
+
+          .pBtn {
+            height: 36px;
+            width: 148px;
+            margin-right: 10px;
+            background-color: white;
+            color: gainsboro;
+
+            .txt2 {
               height: 36px;
               width: 94px;
               text-indent: 10px;
-              &::-webkit-input-placeholder{
+
+              &::-webkit-input-placeholder {
                 color: gainsboro;
               }
+
               outline: none; // 去除选中状态边框
             }
-            .aTxt2{
+
+            .aTxt2 {
               padding: 6px 4px 9px;
               color: #00b38a;
-              cursor:pointer;
+              cursor: pointer;
             }
           }
-          .btnSub{
+
+          .btnSub {
             width: 106px;
-            height: 36px;//边框占里2像素
+            height: 36px; //边框占里2像素
             border: 1px solid #ccefe7;
             background: transparent;
             color: #fff;
             outline: none; // 去除选中状态边框
+
             &:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+              background-color: rgba(255, 255, 255, 0.2);
             }
           }
-          
-          
+
+
         }
       }
-       
+
     }
   }
 }
 
-.search{
+.search {
   // .mian();
   height: 132px;
   background: #f2f5f4;
-  .searCon{
+
+  .searCon {
     .mian();
     height: 102px;
 
     // 调整子元素的位置，高度也要减去30px
     padding-top: 30px;
-    .sear{
+
+    .sear {
       width: 937px;
       // height: 47px;
       margin-left: 133px;
       background-color: #00b38a;
-      .searInp{
+
+      .searInp {
         .fl();
         width: 794px;
         height: 45px;
         border: 1px solid #e8e8e8;
-        &::-webkit-input-placeholder{
+
+        &::-webkit-input-placeholder {
           font-size: 16px;
         }
+
         text-indent: 14px;
       }
-      .btn{
+
+      .btn {
         .fr();
-        width:141px ;
-        background-color:transparent;
+        width: 141px;
+        background-color: transparent;
         line-height: 47px;
         text-align: center;
         font-size: 18px;
         color: #fff;
-        cursor:pointer;
+        cursor: pointer;
+
         &:hover {
           background-color: rgba(0, 0, 0, 0.1);
-          }
+        }
       }
     }
-    .searList{
+
+    .searList {
       margin-left: 133px;
       line-height: 38px;
-      li{
+
+      li {
         .fl();
         padding-right: 22px;
-        a{
-          color:#00c1cc;
+
+        a {
+          color: #00c1cc;
+
           &:hover {
-            text-shadow:1px 1px 3px gainsboro ;
-            color:#00c1cc;
-            }
+            text-shadow: 1px 1px 3px gainsboro;
+            color: #00c1cc;
+          }
         }
-        
-        &:first-child{
-          a{
-            color:#778ab9;
+
+        &:first-child {
+          a {
+            color: #778ab9;
           }
         }
       }
-      
+
     }
   }
 
 }
-.bannCon{
+
+.bannCon {
   .mian();
   height: 430px;
+  padding-top: 100px;
+
   // background: pink;
-  .banLeft{
+  .banLeft {
     .fl();
     width: 300px;
     height: 430px;
     // background: skyblue;
-    .first{
+
+    .first {
       position: relative;
       width: 300px;
-      height: 40px;
-      border-radius: 2px;
-      // z-index: 100;
-      // box-shadow: -5px 0px 4px  2px gainsboro,
-      //             -5px 0px 4px 2px gainsboro;
-      // background-color: hotpink;
-      &:hover{
-        // background-color: red;
-        box-shadow: gainsboro 0 0 4px 2px ;
+      padding: 0px 10px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+
+      &:hover {
+        box-shadow: 0 0 4px 2px gainsboro;
+
       }
-      &:hover .firstV{
-        display: inline-block;
+
+      &:hover .firstV {
+        display: block;
+
       }
-      .banList{
-          li{position: relative;
-            // background-color: chartreuse;
-            line-height: 40px;
-            a{
-              &:first-child{
-                font-size: 18px;
-                color:  #333;;
-              }
-              font-size: 14px;
+
+      &:hover .firstVi {
+        display: block;
+
+      }
+
+      .banList {
+        li {
+          position: relative;
+          // background-color: chartreuse;
+          line-height: 43px;
+
+          a {
+            &:first-child {
+              font-size: 18px;
               color: #333;
-              padding: 0px 8px;
+              ;
             }
-            .arrow{
-              position: absolute;
-              top:11px;
-              right: 0px;
-              display: inline-block;
-              width: 9px;
-              height: 17px;
-              background-image: url(../images/arrow.png);
-              background-repeat: no-repeat;
-              background-position: 3px 4px;
-              background-size: 6px 11px;
-            }
+
+            font-size: 14px;
+            color: #333;
+            padding: 0px 8px;
           }
+
+          .arrow {
+            position: absolute;
+            top: 13px;
+            right: 0px;
+            z-index: 11;
+            display: inline-block;
+            width: 9px;
+            height: 17px;
+            background-image: url(../images/arrow.png);
+            background-repeat: no-repeat;
+            background-position: 3px 4px;
+            background-size: 6px 11px;
+          }
+        }
       }
-      
-      .firstV{
+
+      .firstV {
         position: absolute;
         top: 0px;
-        left: 290px;
-        height: 100px;
-        width: 200px;
+        left: 317px;
+        height: 400px;
+        width: 500px;
         // background-color: #00c1cc;
-        box-shadow: gainsboro 0 0 4px 2px ;
+        box-shadow: gainsboro 0 0 4px 2px;
         display: none;
-        // background-color: #00c1cc;
-        // z-index: -1;
-        // z-index: 10;
-        z-index: 10;
         background: #fff;
-        box-shadow: 0 0 4px 2px gainsboro ;
+        box-shadow: 0 0 4px 2px gainsboro;
         border-radius: 2px;
         border-top-left-radius: 0;
+        z-index: 9;
       }
-      
+
+      .firstVv {
+        height: 200px;
+        width: 500px;
+      }
+
+      .firstVi {
+        z-index: 10;
+        position: absolute;
+        background-color: #fff;
+        height: 45px;
+        width: 10px;
+        top: 0.1px;
+        left: 310px;
+        display: none;
+      }
+
     }
-   
+
   }
-  .banRight{
+
+  .banRight {
     .fr();
     width: 840px;
     height: 430px;
-    background: yellowgreen;
+    // background: yellowgreen;
+
+    #parent {
+      position: relative;
+      width: 840px;
+      height: 346px;
+
+      #uls {
+        position: relative;
+        width: 840px;
+        height: 346px;
+        overflow: hidden;
+
+        #img_ul {
+          position: absolute;
+          left: 0;
+          top: 0;
+          /* width: 3000px; 500*5+500 多留出一张图片的宽度！ */
+          width: 3360px;
+          list-style: none;
+
+          li {
+            float: left;
+            width: 840px;
+            height: 346px;
+          }
+        }
+
+        #litCir_ul {
+          position: absolute;
+          right: 400px;
+          bottom: 10px;
+          list-style: none;
+          li {
+            float: left;
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+
+          li.active {
+            background-color: white;
+          }
+
+          li.quiet {
+            background-color: pink;
+          }
+        }
+      }
+
+      #buttons {
+        display: none;
+        div {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          top: 50%;
+          margin-top: -20px;
+          cursor: pointer; 
+        }
+
+        #left {
+          left: 5px;
+          background: url(../images/left.png) no-repeat;
+          background-size: 18px 34px;
+          background-position: 9px 3px;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        #right {
+          left: 100%;
+          margin-left: -45px;
+          background: url(../images/right.png) no-repeat;
+          background-size: 18px 34px;
+          background-position: 11px 3px;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
   }
 }
