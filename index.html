@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/master.css">
   <title>拉钩网首页</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
 </head>
 
 <body>
@@ -32,13 +33,13 @@
             </div>
             <!-- 列表一般都不设置宽度，让内容撑开和padding设置间隔 -->
             <ul class="ulList clearFixed">
-              <li><a href="https://baidu.com" target="_blank">首页</a></li>
-              <li><a href="#">公司11111</a></li>
+              <!-- <li><a href="https://baidu.com" target="_blank">首页</a></li>
+              <li><a href="#">公司</a></li>
               <li><a href="#">校园招聘</a></li>
               <li><a href="#">职位</a></li>
               <li><a href="#">言职</a></li>
               <li><a href="#">课程</a></li>
-              <li><a href="#">app</a></li>
+              <li><a href="#">app</a></li> -->
             </ul>
           </div>
           <div class="conRight">
@@ -89,151 +90,648 @@
           <li><a href="">数据分析</a></li>
           <li><a href="">PHP</a></li>
           <li><a href="">C++</a></li>
-       </ul>
+        </ul>
       </div>
     </div>
     <div class="banner">
       <div class="bannCon clearFixed">
         <div class="banLeft">
-          <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">技术</a>
-                  <a href="">Java</a>
-                  <a href="">PHP</a>
-                  <a href="">C++</a>
-                  <a href="">区块链</a>
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV"></div>
-              <div class="firstVi"></div>
-            </div>
-            <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">产品</a>
-                  <a href="">产品总监</a>
-                  <a href="">产品经理</a>
-                  <!-- <a href="">C++</a>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">技术</a>
+                <a href="">Java</a>
+                <a href="">PHP</a>
+                <a href="">C++</a>
+                <a href="">区块链</a>
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV"></div>
+            <div class="firstVi"></div>
+          </div>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">产品</a>
+                <a href="">产品总监</a>
+                <a href="">产品经理</a>
+                <!-- <a href="">C++</a>
                   <a href="">区块链</a> -->
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV firstVv"></div>
-              <div class="firstVi"></div>
-            </div>
-            <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">设计</a>
-                  <a href="">UI设计师</a>
-                  <a href="">交互设计</a>
-                  <a href="">网页设计师</a>
-                  <!-- <a href="">区块链</a> -->
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV"></div>
-              <div class="firstVi"></div>
-            </div>
-            <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">技术</a>
-                  <a href="">Java</a>
-                  <a href="">PHP</a>
-                  <a href="">C++</a>
-                  <a href="">区块链</a>
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV"></div>
-              <div class="firstVi"></div>
-            </div>
-            <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">技术</a>
-                  <a href="">Java</a>
-                  <a href="">PHP</a>
-                  <a href="">C++</a>
-                  <a href="">区块链</a>
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV"></div>
-              <div class="firstVi"></div>
-            </div>
-            <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">技术</a>
-                  <a href="">Java</a>
-                  <a href="">PHP</a>
-                  <a href="">C++</a>
-                  <a href="">区块链</a>
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV"></div>
-              <div class="firstVi"></div>
-            </div>
-            <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">技术</a>
-                  <a href="">Java</a>
-                  <a href="">PHP</a>
-                  <a href="">C++</a>
-                  <a href="">区块链</a>
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV"></div>
-              <div class="firstVi"></div>
-            </div>
-            <div class="first">           
-              <ul class="banList">
-                <li>
-                  <a href="">技术</a>
-                  <a href="">Java</a>
-                  <a href="">PHP</a>
-                  <a href="">C++</a>
-                  <a href="">区块链</a>
-                 <i class="arrow"></i>
-                </li>
-              </ul>
-              <div class="firstV"></div>
-              <div class="firstVi"></div>
-            </div>
-            </div>
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV firstVv"></div>
+            <div class="firstVi"></div>
+          </div>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">设计</a>
+                <a href="">UI设计师</a>
+                <a href="">交互设计</a>
+                <a href="">网页设计师</a>
+                <!-- <a href="">区块链</a> -->
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV"></div>
+            <div class="firstVi"></div>
+          </div>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">技术</a>
+                <a href="">Java</a>
+                <a href="">PHP</a>
+                <a href="">C++</a>
+                <a href="">区块链</a>
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV"></div>
+            <div class="firstVi"></div>
+          </div>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">技术</a>
+                <a href="">Java</a>
+                <a href="">PHP</a>
+                <a href="">C++</a>
+                <a href="">区块链</a>
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV"></div>
+            <div class="firstVi"></div>
+          </div>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">技术</a>
+                <a href="">Java</a>
+                <a href="">PHP</a>
+                <a href="">C++</a>
+                <a href="">区块链</a>
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV"></div>
+            <div class="firstVi"></div>
+          </div>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">技术</a>
+                <a href="">Java</a>
+                <a href="">PHP</a>
+                <a href="">C++</a>
+                <a href="">区块链</a>
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV"></div>
+            <div class="firstVi"></div>
+          </div>
+          <div class="first">
+            <ul class="banList">
+              <li>
+                <a href="">技术</a>
+                <a href="">Java</a>
+                <a href="">PHP</a>
+                <a href="">C++</a>
+                <a href="">区块链</a>
+                <i class="arrow"></i>
+              </li>
+            </ul>
+            <div class="firstV"></div>
+            <div class="firstVi"></div>
+          </div>
+        </div>
         <div class="banRight">
-          <div id= "parent">
+          <div id="parent">
             <div id="uls">
-                <!-- 图片列表 -->
-                <ul id="img_ul">
-                    <li><img src="./images/lunbo1.JPG"/></li>
-                    <li><img src="./images/lunbo2.png"/></li>
-                    <li><img src="./images/lunbo3.png"/></li>
-                    
-                </ul>
-                <!-- 小圆点列表 -->
-                <ul id='litCir_ul'></ul>
+              <!-- 图片列表 -->
+              <ul id="img_ul">
+                <li><img src="./images/lunbo1.JPG" /></li>
+                <li><img src="./images/lunbo2.png" /></li>
+                <li><img src="./images/lunbo3.png" /></li>
+
+              </ul>
+              <!-- 小圆点列表 -->
+              <ul id='litCir_ul'></ul>
             </div>
             <div id="buttons">
-                <!-- 左右按钮部分 -->
-                <div id="left"></div>
-                <div id="right"></div>
+              <!-- 左右按钮部分 -->
+              <div id="left"></div>
+              <div id="right"></div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="content"></div>
-    <div class="footer"></div>
+    <div class="content">
+      <div class="line1">
+        <div class="line1Top">
+          <div class="top1">
+            <span class="hotBtn">24Hour热门</span>
+            <span class="newBtn">最新职位</>
+          </div>
+          <!-- <div class="top2">
+            <span class="span1">?</span>
+            <span class="span2">过去24小时，最多人看过的职位在这里</span>
+            <span class="span3">我知道了</span>
+          </div> -->
+        </div>
+        <ul class="conUl">
+          <div class="top2">
+            <span class="span1">?</span>
+            <span class="span2">过去24小时，最多人看过的职位在这里</span>
+            <span class="span3">我知道了</span>
+          </div>
+          <li class="clearFixed">
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed .pp">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <li class="clearFixed">
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <li class="clearFixed">
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+        </ul>
+        <ul class="conUl con22">
+          <div class="top2">
+            <span class="span1">?</span>
+            <span class="span2">刚刚才发布的新职位！</span>
+            <span class="span3">我知道了</span>
+          </div>
+          <li class="clearFixed">
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">11111111</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">22222222222</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <li class="clearFixed">
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+          <li class="clearFixed">
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="conBox fl">
+              <div class="job clearFixed">
+                <a href="" class="jobTxt fl">java开发工程师</a>
+                <div class="time fl">[10:35发布]</div>
+                <a href=""><img src="./images/message.png" alt="" class="image fl"></a>
+                <span class="money fr">10k-15k</span>
+              </div>
+              <div class=" btn">经验5-10年 / 大专</div>
+              <p class="clearFixed">
+                <span class="btn1 fl ">电商</span>
+                <span class="btn1 fl">移动互联网111111</span>
+              </p>
+              <div class="imgBox clearFixed">
+                <a href="" class="fl"><img src="./images/zhiyun.png" alt=""></a>
+                <div class="imgTxt fl">
+                  <a href="" class="txt1">公司名称公司名称名称</a>
+                  <p class="txt2">教育/未融资</p>
+                </div>
+              </div>
+
+
+            </div>
+          </li>
+        </ul>
+
+        <a href="" class="more">查看更多</a>
+      </div>
+
+
+
+
+
+
+      <div class="line2">
+        <div class="line2Top">
+          <div class="top1">
+            <a href="" class="hotBtn">互联网热门公司榜</a>
+          </div>
+          <div class="top2">
+            <span class="span1">?</span>
+            <span class="span2">过去24小时，最多人看过的职位在这里</span>
+            <span class="span3">我知道了</span>
+          </div>
+        </div>
+        <div class="con2Box">
+          <div class="listBox"></div>
+        </div>
+        <a href="" class="more">查看更多</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
   </div>
   <script type="text/javaScript" src="./js/carousel.js"></script>
+  <script type="text/javaScript" src="./js/master.js"></script>
+  <script>
+    axios.get('http://rap2api.taobao.org/app/mock/269534/title').then(res => {
+      console.log(res);
+      let data = res.data
+      // // data = data.title_info.split("},")
+      // data = JSON.parse(data.title_info)
+      console.log(data);
+      data = {
+        title_info: [{ title: '首页', url: "https://baidu.com" }, { title: '校园招聘', url: "https://qq.com" }]
+      }
+      // var ul = document.querySelector('.ulList')
+      // console.log(ul);
+      // res.data.title.map(item => {
+      //   var a_li = document.createElement("li");
+      //   console.log(1);
+      //   var a = document.createElement("a");
+      //   a.innerHTML = item;
+      //   a_li.appendChild(a);
+
+      //   ul.appendChild(a_li);
+
+      // })
+      var ul = document.querySelector('.ulList')
+      data.title_info.map(item => {
+        var a_li = document.createElement("li");
+        console.log(1);
+        var a = document.createElement("a");
+        a.innerHTML = item.title;
+        a.href = item.url
+        a_li.appendChild(a);
+        ul.appendChild(a_li);
+      })
+
+    })
+  </script>
   <div class="a"></div>
 </body>
 
