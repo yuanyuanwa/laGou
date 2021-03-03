@@ -32,6 +32,9 @@ li {
 .fr {
   float: right;
 }
+.zhankai {
+  cursor: pointer;
+}
 .clearFixed::after {
   content: "";
   display: block;
@@ -598,6 +601,9 @@ input {
   border: 1px solid #eaeeed;
   padding: 24px 17px 0px;
 }
+.content .line1 .conUl li .conBox:hover {
+  box-shadow: 0 0 4px 1px gainsboro;
+}
 .content .line1 .conUl li .conBox .job {
   font-size: 16px;
   line-height: 16px;
@@ -622,7 +628,7 @@ input {
   margin: 13px 0px;
 }
 .content .line1 .conUl li .conBox p {
-  border-bottom: 1px dotted #eaeeed;
+  border-bottom: 1px dashed #eaeeed;
   padding-bottom: 19px;
 }
 .content .line1 .conUl li .conBox p .btn1 {
@@ -678,8 +684,8 @@ input {
 }
 .content .line1 .more {
   display: block;
-  width: 388px ;
-  height: 42px ;
+  width: 388px;
+  height: 42px;
   border: 1px solid #00b376;
   color: #00b38a;
   margin: 0 auto;
@@ -692,9 +698,6 @@ input {
 .content .line1 .more:hover {
   background-color: #00b38a;
   color: white;
-}
-.content .line2 {
-  background-color: pink;
 }
 .content .line2 .line2Top .top1 {
   border-bottom: 1px solid #e8e8e8;
@@ -733,16 +736,79 @@ input {
   cursor: pointer;
   color: #00b38a;
 }
+.content .line2 .con2Box {
+  margin-bottom: 16px;
+}
 .content .line2 .con2Box .listBox {
-  width: 288px;
-  height: 268px;
+  width: 248px;
+  height: 246px;
   border: 1px solid #eeeeee;
-  background-color: cornflowerblue;
+  padding: 12px 20px;
+  font-size: 14px;
+  margin: 0 6.5px;
+}
+.content .line2 .con2Box .listBox:nth-child(1) {
+  margin-left: 0px;
+}
+.content .line2 .con2Box .listBox:nth-child(4) {
+  margin-right: 0px;
+}
+.content .line2 .con2Box .listBox:hover {
+  box-shadow: 0 0 4px 1px gainsboro;
+}
+.content .line2 .con2Box .listBox .aImg .boxImg {
+  display: block;
+  height: 80px;
+  width: 80px;
+  margin: 0px auto;
+  margin-bottom: 16px;
+}
+.content .line2 .con2Box .listBox a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.content .line2 .con2Box .listBox .txt1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #999999;
+}
+.content .line2 .con2Box .listBox .txt2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #555555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px dashed #999999;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+}
+.content .line2 .con2Box .listBox .listCon .box1 {
+  float: left;
+  width: 78px;
+}
+.content .line2 .con2Box .listBox .listCon .box1 a {
+  display: block;
+  font-size: 12px;
+  color: #999999;
+}
+.content .line2 .con2Box .listBox .listCon .box1 a:first-child {
+  color: #00b38a;
+}
+.content .line2 .con2Box .listBox .listCon .box1 a:last-child:hover {
+  color: #00b38a;
+}
+.content .line2 .con2Box .listBox .listCon .box1:nth-child(2) {
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  margin: 0px 5px;
 }
 .content .line2 .more {
   display: block;
-  width: 388px ;
-  height: 42px ;
+  width: 388px;
+  height: 42px;
   border: 1px solid #00b376;
   color: #00b38a;
   margin: 0 auto;
@@ -752,4 +818,311 @@ input {
 .content .line2 .more:hover {
   background-color: #00b38a;
   color: white;
+}
+.content .line3 {
+  margin-top: 55px;
+  height: 180px;
+}
+.content .line3 .line1Top {
+  position: relative;
+}
+.content .line3 .line1Top .top1 {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 18px;
+  line-height: 51px;
+}
+.content .line3 .line1Top .top1 span {
+  margin-right: 20px;
+}
+.content .line3 .line1Top .top1 .hot {
+  padding-bottom: 16px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+.content .line3 .line1Top .top1 .active-none {
+  border: none;
+}
+.content .line3 .line1Top .top1 .active-hot {
+  border-bottom: 2px solid #000;
+}
+.content .line3 .line1Top .top1 .hott {
+  border-bottom: 2px solid #000;
+  padding-bottom: 16px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+}
+.content .line3 .line1Top .cont {
+  width: 1200px;
+  font-size: 14px;
+}
+.content .line3 .line1Top .cont a {
+  color: #555;
+  margin-right: 18px;
+}
+.content .line3 .line1Top .cont a:hover {
+  color: #00b38a;
+  text-decoration: underline;
+}
+.content .line3 .line1Top .cont p {
+  float: right;
+  color: #999;
+}
+.content .line3 .line1Top .cont p i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/arrow_down2.png);
+  background-position: 0 5px;
+  background-size: 12px 6px;
+  background-repeat: no-repeat;
+  line-height: 12px;
+}
+.content .line3 .line1Top .cont p .iup {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/arrow_down2.png);
+  background-position: 0 2px;
+  background-size: 12px 6px;
+  background-repeat: no-repeat;
+  line-height: 12px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  vertical-align: 0;
+}
+.content .line3 .line1Top .t2 {
+  display: block;
+}
+.content .line3 .line1Top .t2 .top22 {
+  display: none;
+}
+.content .line3 .line1Top .t3 {
+  position: absolute;
+  top: 74px;
+  left: 0px;
+  display: none;
+}
+.content .line3 .line1Top .t3 .top22 {
+  display: none;
+}
+.content .line3 .line1Top .t4 {
+  position: absolute;
+  top: 74px;
+  left: 0px;
+  display: none;
+}
+.content .line3 .line1Top .t4 .top22 {
+  display: none;
+}
+.content .line3 .line1Top .t5 {
+  position: absolute;
+  top: 74px;
+  left: 0px;
+  display: none;
+}
+.content .line3 .line1Top .t5 .top22 {
+  display: none;
+}
+.content .line3 .line1Top .t6 {
+  position: absolute;
+  top: 74px;
+  left: 0px;
+  display: none;
+}
+.content .line3 .line1Top .t6 .top22 {
+  display: none;
+}
+.footer {
+  border-top: 1px solid #ebebeb;
+}
+.footer .fooTop {
+  width: 1200px;
+  margin: 0px auto;
+  padding-top: 50px;
+}
+.footer .fooTop .appBox {
+  margin-right: 130px;
+  height: 155px;
+  width: 314px;
+  border-right: 1px solid #e8e8e8;
+}
+.footer .fooTop .appBox .appBox1 {
+  color: #00b38a;
+  font-size: 14px;
+  width: 180px;
+  height: 44px;
+  border: 1px solid #00b38a;
+  display: block;
+  margin-bottom: 17px;
+}
+.footer .fooTop .appBox .appBox1:hover {
+  background-color: #00b38a;
+  color: white;
+}
+.footer .fooTop .appBox .appBox1:hover .link {
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -35px -92px;
+}
+.footer .fooTop .appBox .appBox1:hover .link2 {
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -61px -32px;
+}
+.footer .fooTop .appBox .appBox1 .link {
+  display: inline-block;
+  width: 12px;
+  height: 15px;
+  margin: 14px 8px 0px 35px;
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -35px -68px;
+}
+.footer .fooTop .appBox .appBox1 .link2 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 14px 8px 0px 38px;
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -57px -68px;
+}
+.footer .fooTop .appBox .linkBox {
+  width: 182px;
+  font-size: 14px;
+  color: #555555;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .fooTop .appBox .linkBox a {
+  display: flex;
+  align-items: center;
+}
+.footer .fooTop .appBox .linkBox a:hover {
+  color: #00b38a;
+}
+.footer .fooTop .appBox .linkBox a:hover .vxLink {
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -35px -44px;
+}
+.footer .fooTop .appBox .linkBox a:hover .vbLink {
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -40px -10px;
+}
+.footer .fooTop .appBox .linkBox .vxLink {
+  width: 16px;
+  height: 16px;
+  margin: 0px 8px 0px 0px;
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -10px -70px;
+}
+.footer .fooTop .appBox .linkBox .vbLink {
+  width: 16px;
+  height: 16px;
+  margin: 0px 8px 0px 0px;
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -10px -95px;
+}
+.footer .fooTop dl dt {
+  font-size: 18px;
+  color: #555555;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.footer .fooTop dl dd {
+  font-size: 14px;
+  color: #555555;
+  line-height: 30px;
+}
+.footer .fooTop dl dd:hover {
+  color: #00b38a;
+}
+.footer .fooTop .dl2 {
+  margin: 0px 170px;
+}
+.footer .fooBottom {
+  height: 100px;
+  background-color: #fafafa;
+  color: #555;
+}
+.footer .fooBottom .btooCon {
+  width: 1200px;
+  margin: 0px auto;
+  height: 50px;
+  font-size: 14px;
+  padding-top: 50px;
+  margin-top: 50px;
+  color: #999;
+}
+.footer .fooBottom .btooCon .txtP1 em {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+}
+.footer .fooBottom .btooCon a {
+  display: inline-block;
+  margin: 0 8px;
+  color: #999;
+}
+.footer .fooBottom .btooCon a:hover {
+  color: #555;
+}
+.footer .fooBottom .btooCon .txtP3 {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.footer .fooBottom .btooCon .txtP3 .logo1 {
+  margin-right: 4px;
+  display: inline-block;
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -9px -44px;
+  width: 16px;
+  height: 16px;
+}
+.footer .fooBottom .btooCon .txtP4 {
+  display: flex;
+  align-items: center;
+  margin: 0px 15px 0px 10px;
+}
+.footer .fooBottom .btooCon .txtP4 .logo2 {
+  margin-right: 4px;
+  display: inline-block;
+  background: url(../images/111.png) no-repeat;
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+}
+.footer .fooBottom .btooCon .txtBox {
+  height: 58px;
+  width: 186px;
+  border: 1px solid #e8e8e8;
+  margin-top: -20px;
+  font-size: 12px;
+}
+.footer .fooBottom .btooCon .txtBox .logo3 {
+  display: inline-block;
+  margin: 18px 10px 0px 20px;
+  background: url(../images/logo2.png) no-repeat;
+  background-size: 128px 128px;
+  background-position: -10px -10px;
+  width: 20px;
+  height: 24px;
+}
+.footer .fooBottom .btooCon .logo4 {
+  display: inline-block;
+  background: url(../images/footer_lagou_icon.png) no-repeat;
+  background-size: 198px 19px;
+  background-position: 0px 0px;
+  width: 198px;
+  height: 19px;
 }
