@@ -132,52 +132,92 @@ for (let i = 0; i < hot.length; i++) {
 
 var zhankai = document.getElementsByClassName('zhankai');
 console.log(zhankai);
-var i = document.getElementsByClassName('i');
+var ii = document.getElementsByClassName('i');
 var iC = document.getElementsByClassName('i');
 
 var iup = document.getElementsByClassName('iup')
 var top22 = document.getElementsByClassName('top22')
-for (let i = 0; i < zhankai.length; i++) {
-    console.log(top22)
-    let isExpand = false
-    zhankai[i].addEventListener('click', () => {
-        if (isExpand) {
-            // 收回
+// for (let i = 0; i < zhankai.length; i++) {
+//     console.log(top22)
+//     let isExpand = false
+//     zhankai[i].addEventListener('click', () => {
+//         if (isExpand) {
+//             // 收回
 
-            // top22[i].style.display = 'none'
-            // console.log(top22[i].style.display)
-            for (let k = 0; k < top22.length; k++) {
+//             // top22[i].style.display = 'none'
+//             // console.log(top22[i].style.display)
+//             for (let k = 0; k < top22.length; k++) {
 
-                top22[k].style.display = 'none'
+//                 top22[k].style.display = 'none'
+//                 iup[k].className = 'i';
+//                 //收回
+//                 // if (!(iup[k] == undefined)) {
+//                 //     iup[k].className = 'i';
+//                 //    }
 
-                // top22[j].style.display = 'block' // 展开所有
+//                 // top22[j].style.display = 'block' // 展开所有
+//             }
+//             isExpand = false
+
+//         } else {
+//             isExpand = true;
+
+//             for (let j = 0; j < top22.length; j++) {
+//                 // top22[j].style.display = 'none'
+//                 top22[j].style.display = 'block'
+//                // 展开所有
+//                if (iup[j] == undefined) {
+//                    console.log(i[0]);
+//                 i[0].className = 'iup';
+//                }
+
+//             }
+//             // top22[i].style.display = 'block' // 展开单个
+//         }
+
+
+//     })
+
+// }
+
+for (let i = 0; i < hot.length; i++) {
+    console.log(i)
+    zhankai[i].onclick = function () {
+        if (iup[0] == undefined) {
+            // ii[0].className = 'iup';
+            for (let i = 0; i < top22.length; i++) {
+                ii[0].className = 'iup';
+                // i[i].className = 'iup';
+                top22[i].style.display = 'block'
             }
-            isExpand = false
-
         } else {
-            isExpand = true
-
-            for (let j = 0; j < top22.length; j++) {
-                // top22[j].style.display = 'none'
-                top22[j].style.display = 'block' // 展开所有
-
+            // iup[0].className = 'ii';
+            for (let i = 0; i < top22.length; i++) {
+                iup[0].className = 'i';
+                // iup[i].className = 'i';
+                top22[i].style.display = 'none'
             }
-            // top22[i].style.display = 'block' // 展开单个
         }
-
-
-    })
-
+    }
 }
+
+
+
 // zhankai[0].onclick = function () {
 //     if (iup[0] == undefined) {
-//         i[0].className = 'iup';
+//         // ii[0].className = 'iup';
+//         // console.log(ii[1]);
+//         // ii[i].className = 'iup';
 //         for (let i = 0; i < top22.length; i++) {
+//             ii[0].className = 'iup';
+            
 //             top22[i].style.display = 'block'
+
 //         }
 //     } else {
-//         iup[0].className = 'i';
+//         // iup[0].className = 'ii';
 //         for (let i = 0; i < top22.length; i++) {
+//             iup[0].className = 'ii';
 //             top22[i].style.display = 'none'
 //         }
 //     }
@@ -186,40 +226,46 @@ for (let i = 0; i < zhankai.length; i++) {
 
 // zhankai[1].onclick = function () {
 //     if (iup[0] == undefined) {
-//         i[1].className = 'iup';
+//         // ii[0].className = 'iup';
 //         for (let i = 0; i < top22.length; i++) {
+//             ii[0].className = 'iup';
+//             // i[i].className = 'iup';
 //             top22[i].style.display = 'block'
 //         }
 //     } else {
-//         iup[0].className = 'i';
+//         // iup[0].className = 'ii';
 //         for (let i = 0; i < top22.length; i++) {
+//             iup[0].className = 'ii';
+//             // iup[i].className = 'i';
 //             top22[i].style.display = 'none'
 //         }
 //     }
 
 // }
+
 // zhankai[2].onclick = function () {
 //     if (iup[0] == undefined) {
-//         i[2].className = 'iup';
+//         ii[2].className = 'iup';
 //         for (let i = 0; i < top22.length; i++) {
 //             top22[i].style.display = 'block'
 //         }
 //     } else {
-//         console.log(iup[0]);
+//         iup[0].className = 'ii';
 //         for (let i = 0; i < top22.length; i++) {
 //             top22[i].style.display = 'none'
 //         }
 //     }
 
 // }
+
 // zhankai[3].onclick = function () {
 //     if (iup[0] == undefined) {
-//         i[3].className = 'iup';
+//         ii[3].className = 'iup';
 //         for (let i = 0; i < top22.length; i++) {
 //             top22[i].style.display = 'block'
 //         }
 //     } else {
-//         iup[0].className = 'i';
+//         iup[0].className = 'ii';
 //         for (let i = 0; i < top22.length; i++) {
 //             top22[i].style.display = 'none'
 //         }
@@ -228,12 +274,12 @@ for (let i = 0; i < zhankai.length; i++) {
 // }
 // zhankai[4].onclick = function () {
 //     if (iup[0] == undefined) {
-//         i[4].className = 'iup';
+//         ii[4].className = 'iup';
 //         for (let i = 0; i < top22.length; i++) {
 //             top22[i].style.display = 'block'
 //         }
 //     } else {
-//         iup[0].className = 'i';
+//         iup[0].className = 'ii';
 //         for (let i = 0; i < top22.length; i++) {
 //             top22[i].style.display = 'none'
 //         }

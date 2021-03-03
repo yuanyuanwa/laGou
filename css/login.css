@@ -1,0 +1,439 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: #f8f9fc;
+  height: 720px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+  -webkit-font-smoothing: antialiased;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearFixed::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header {
+  height: 360px;
+  width: 100%;
+  background: #00b38a;
+}
+.header .logo {
+  width: 112px;
+  height: 42px;
+  margin-bottom: 35px;
+  background: url(../images/logo@2x_425d422.png) no-repeat;
+  background-size: 112px 42px;
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  margin-left: -350px;
+}
+.boxCon {
+  position: absolute;
+  margin-left: -350px;
+  top: 154px;
+  width: 700px;
+  height: 400px;
+  left: 50%;
+  background-color: white;
+  border: 1px solid #dce1e6;
+  padding: 6px;
+  z-index: 200;
+}
+.boxCon .forBox {
+  position: relative;
+}
+.boxCon .forBox .imgBox .img1 {
+  float: left;
+  background: url(../images/qrcode-normal_bb3ab97.svg);
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+.boxCon .forBox .imgBox .img1:hover {
+  background: url(../images/qrcode-click_1611a71.svg);
+}
+.boxCon .forBox .imgBox .img11 {
+  float: left;
+  background: url(../images/pc-normal_98450bc.svg);
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+.boxCon .forBox .imgBox .img11:hover {
+  background: url(../images/pc-click_0bed0c8.svg);
+}
+.boxCon .forBox .imgBox .img2 {
+  float: left;
+  background: url(../images/wx-login_c936a5c.svg);
+  width: 106px;
+  height: 34px;
+  margin-top: -5px;
+  cursor: pointer;
+}
+.boxCon .forBox .imgBox .img22 {
+  float: left;
+  background: url(../images//mobile-login_1d769b4.svg);
+  width: 106px;
+  height: 34px;
+  margin-top: -6px;
+  cursor: pointer;
+}
+.boxCon .forBox .inpLeft {
+  position: absolute;
+  left: 63px;
+  float: left;
+  width: 290px;
+  height: 277px;
+  cursor: pointer;
+}
+.boxCon .forBox .inpLeft .line1 {
+  border-bottom: 1px solid #ededed;
+  line-height: 40px;
+  font-size: 16px;
+  color: #555;
+}
+.boxCon .forBox .inpLeft .line1 p {
+  width: 145px;
+  text-align: center;
+}
+.boxCon .forBox .inpLeft .line1 p:first-child {
+  color: #00b38a;
+}
+.boxCon .forBox .inpLeft .line1 #spa {
+  position: relative;
+  top: 40px;
+  width: 145px;
+  border-bottom: 1px #00b38a solid;
+  left: 0px;
+  /* height: 200px; 
+            background-color: seagreen; */
+}
+.boxCon .forBox .inpLeft .line1 #spa::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  top: -11px;
+  border: 6px solid transparent;
+  /* border-color: red pink skyblue sandybrown; */
+  border-bottom-color: #00b38a;
+}
+.boxCon .forBox .inpLeft .line1 #spa::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  top: -10px;
+  border: 6px solid transparent;
+  /* border-color: red pink skyblue sandybrown; */
+  border-bottom-color: white;
+}
+.boxCon .forBox .inpLeft .linBox2 {
+  position: relative;
+  display: block;
+}
+.boxCon .forBox .inpLeft .linBox2 .linInp {
+  height: 44px;
+  width: 290px;
+  border: none;
+  border-bottom: 1px solid #ededed;
+  outline: 0;
+  margin-top: 20px;
+}
+.boxCon .forBox .inpLeft .linBox2 .linInp::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #999;
+}
+.boxCon .forBox .inpLeft .linBox2 .tip {
+  background: url(../images/info_03c90e8.png) no-repeat;
+  display: block;
+  margin-top: 5px;
+  line-height: 18px;
+  font-size: 12px;
+  padding-left: 20px;
+  color: #fd5f39;
+  background-size: 14px;
+}
+.boxCon .forBox .inpLeft .linBox2 .span1 {
+  position: absolute;
+  top: 21px;
+  line-height: 44px;
+  display: block;
+  width: 73px;
+}
+.boxCon .forBox .inpLeft .linBox2 .span1::after {
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 5px;
+  background: no-repeat url(../images/small-arrow.png);
+}
+.boxCon .forBox .inpLeft .linBox2 .logg {
+  position: relative;
+}
+.boxCon .forBox .inpLeft .linBox2 .logg .linInp2 {
+  height: 44px;
+  width: 290px;
+  border: none;
+  border-bottom: 1px solid #ededed;
+  outline: 0;
+  margin-top: 20px;
+  width: 210px;
+  padding-right: 80px;
+}
+.boxCon .forBox .inpLeft .linBox2 .logg .linInp2::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #999;
+}
+.boxCon .forBox .inpLeft .linBox2 .logg .tip2 {
+  background: url(../images/info_03c90e8.png) no-repeat;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 18px;
+  font-size: 12px;
+  padding-left: 20px;
+  color: #fd5f39;
+  background-size: 14px;
+}
+.boxCon .forBox .inpLeft .linBox2 .logg a {
+  text-decoration: none;
+  color: #00b38a;
+  float: right;
+  font-size: 14px;
+}
+.boxCon .forBox .inpLeft .linBox2 .log {
+  width: 290px;
+  height: 46px;
+  border: none;
+  border: 1px solid #00b38a;
+  background-color: #00b38a;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  border-radius: 2px;
+  margin-top: 25px;
+}
+.boxCon .forBox .inpLeft .linBox {
+  position: relative;
+  display: none;
+}
+.boxCon .forBox .inpLeft .linBox .linInp {
+  height: 44px;
+  width: 290px;
+  border: none;
+  border-bottom: 1px solid #ededed;
+  outline: 0;
+  margin-top: 20px;
+}
+.boxCon .forBox .inpLeft .linBox .linInp::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #999;
+}
+.boxCon .forBox .inpLeft .linBox .linInp:first-child {
+  text-indent: 73px;
+}
+.boxCon .forBox .inpLeft .linBox .tip {
+  background: url(../images/info_03c90e8.png) no-repeat;
+  display: block;
+  margin-top: 5px;
+  line-height: 18px;
+  font-size: 12px;
+  padding-left: 20px;
+  color: #fd5f39;
+  background-size: 14px;
+  display: none;
+}
+.boxCon .forBox .inpLeft .linBox .span1 {
+  position: absolute;
+  top: 21px;
+  line-height: 44px;
+  display: block;
+  width: 73px;
+}
+.boxCon .forBox .inpLeft .linBox .span1::after {
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 5px;
+  background: no-repeat url(../images/small-arrow.png);
+}
+.boxCon .forBox .inpLeft .linBox .logg {
+  position: relative;
+}
+.boxCon .forBox .inpLeft .linBox .logg .linInp2 {
+  height: 44px;
+  width: 290px;
+  border: none;
+  border-bottom: 1px solid #ededed;
+  outline: 0;
+  margin-top: 20px;
+  width: 210px;
+  padding-right: 80px;
+}
+.boxCon .forBox .inpLeft .linBox .logg .linInp2::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #999;
+}
+.boxCon .forBox .inpLeft .linBox .logg .tip2 {
+  background: url(../images/info_03c90e8.png) no-repeat;
+  display: block;
+  margin-top: 5px;
+  line-height: 18px;
+  font-size: 12px;
+  padding-left: 20px;
+  color: #fd5f39;
+  background-size: 14px;
+  display: none;
+}
+.boxCon .forBox .inpLeft .linBox .logg .but {
+  position: absolute;
+  top: 21px;
+  right: 0px;
+  width: 80px;
+  height: 43px;
+  border: none;
+  background-color: transparent;
+  color: #00b38a;
+  cursor: pointer;
+  outline: none;
+}
+.boxCon .forBox .inpLeft .linBox .log {
+  width: 290px;
+  height: 46px;
+  border: none;
+  border: 1px solid #00b38a;
+  background-color: #00b38a;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  border-radius: 2px;
+  margin-top: 25px;
+}
+.boxCon .forBox .inpLeft2 {
+  position: absolute;
+  display: none;
+  z-index: -1;
+  top: 52px;
+  left: 0px;
+  float: left;
+  width: 416px;
+  height: 277px;
+}
+.boxCon .forBox .inpLeft2 .inp2Con {
+  margin: 41px 123px;
+}
+.boxCon .forBox .inpLeft2 .inp2Con .inp2Txt {
+  margin-top: 10px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+.boxCon .forBox .inpRight {
+  position: relative;
+  border-left: 1px dashed #ededed;
+  float: right;
+  margin-right: 12px;
+}
+.boxCon .forBox .inpRight .span1 {
+  display: block;
+  position: absolute;
+  top: 119px;
+  left: -7px;
+  font-size: 14px;
+  color: #ededed;
+  width: 14px;
+  line-height: 14px;
+  background: white;
+}
+.boxCon .forBox .inpRight .rigBox {
+  font-size: 14px;
+  width: 217px;
+  height: 250px;
+  margin-top: 64px;
+  padding-left: 52px;
+}
+.boxCon .forBox .inpRight .rigBox .txt1 {
+  padding-bottom: 8px;
+}
+.boxCon .forBox .inpRight .rigBox .txt2 {
+  display: block;
+  font-size: 16px;
+  color: #00b38a;
+  text-decoration: none;
+  background: url(../images/icon-arrow-right_ea91505.png) no-repeat;
+  background-position: 68px 4px;
+}
+.boxCon .forBox .inpRight .rigBox .txt2:hover {
+  text-decoration: underline;
+}
+.boxCon .forBox .inpRight .rigBox .txt3 {
+  margin-top: 44px;
+  padding-bottom: 8px;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a1 {
+  display: inline-block;
+  background: url(../images/icon-sina@2x_85ef769.png) no-repeat;
+  width: 20px;
+  height: 16px;
+  background-size: contain;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a1:hover {
+  background: url(../images/icon-sina-hover@2x_9d6e4ff.png) no-repeat;
+  background-size: contain;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a2 {
+  display: inline-block;
+  background: url(../images/icon-wechat@2x_68c86d1.png) no-repeat;
+  width: 20px;
+  height: 16px;
+  background-size: contain;
+  margin-left: 22px;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a2:hover {
+  background: url(../images/icon-wechat-hover@2x_3e6d16a.png) no-repeat;
+  background-size: contain;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a3 {
+  display: inline-block;
+  background: url(../images/icon-tencent@2x_4a0f2ec.png) no-repeat;
+  width: 20px;
+  height: 16px;
+  background-size: contain;
+  margin-left: 22px;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a3:hover {
+  background: url(../images/icon-tencent-hover@2x_241cfc3.png) no-repeat;
+  background-size: contain;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a4 {
+  display: inline-block;
+  background: url(../images/icon-baidu@2x_68a573d.png) no-repeat;
+  width: 20px;
+  height: 16px;
+  background-size: contain;
+  margin-left: 22px;
+}
+.boxCon .forBox .inpRight .rigBox .txt4 .a4:hover {
+  background: url(../images/icon-baidu-hover@2x_858345c.png) no-repeat;
+  background-size: contain;
+}

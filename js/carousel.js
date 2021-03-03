@@ -7,6 +7,8 @@
    // console.log(parent);
    // console.log(litCir_ul);
    // console.log(img_ul.offsetLeft );
+   console.log(img_ul.offsetLeft );
+   console.log(2222);
    var len = img_ul.children.length; //图片张数
    var width = parent.offsetWidth; //每张图片的宽度
    var rate = 10; //一张图片的切换速度， 单位为px

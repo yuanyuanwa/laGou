@@ -1,0 +1,563 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #f8f9fc;
+  height: 720px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial, "Helvetica Neue", Helvetica;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+// ::after是指在元素后面添加内容
+.clearFixed::after {
+  content: "";
+  display: block;
+  clear: both;
+
+}
+
+.header {
+  height: 360px;
+  width: 100%;
+  background: #00b38a;
+
+  .logo {
+    width: 112px;
+    height: 42px;
+    margin-bottom: 35px;
+    background: url(../images/logo@2x_425d422.png) no-repeat;
+    background-size: 112px 42px;
+    position: absolute;
+    top: 76px;
+    //居中
+    left: 50%;
+    margin-left: -350px; //元素本身的一半
+  }
+}
+
+.boxCon {
+  position: absolute;
+  margin-left: -350px;
+  top: 154px;
+  width: 700px;
+  height: 400px;
+  left: 50%;
+  background-color: white;
+  border: 1px solid #dce1e6;
+  padding: 6px;
+  z-index: 200;
+
+  .forBox {
+    position: relative;
+
+    .imgBox {
+
+      .img1 {
+        .fl();
+        background: url(../images/qrcode-normal_bb3ab97.svg);
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+
+        &:hover {
+          background: url(../images/qrcode-click_1611a71.svg)
+        }
+      }
+
+      .img11 {
+        .fl();
+        background: url(../images/pc-normal_98450bc.svg);
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+
+        &:hover {
+          background: url(../images/pc-click_0bed0c8.svg)
+        }
+      }
+
+      .img2 {
+        .fl();
+        background: url(../images/wx-login_c936a5c.svg);
+        width: 106px;
+        height: 34px;
+        margin-top: -5px;
+        cursor: pointer;
+      }
+
+      .img22 {
+        .fl();
+        background: url(../images//mobile-login_1d769b4.svg);
+        width: 106px;
+        height: 34px;
+        margin-top: -6px;
+        cursor: pointer;
+      }
+    }
+
+    .inpLeft {
+      position: absolute;
+      left: 63px;
+
+      .fl();
+      width: 290px;
+      height: 277px;
+      // background-color: slateblue;
+      //  margin: 0 63px;
+      // left: 63px;
+      cursor: pointer;
+
+      .line1 {
+        border-bottom: 1px solid #ededed;
+        ;
+        line-height: 40px;
+        font-size: 16px;
+        color: #555;
+
+        p {
+          width: 145px;
+          text-align: center;
+
+          // background: #00b38a;
+          &:first-child {
+            color: #00b38a;
+          }
+
+        }
+
+        #spa {
+          position: relative;
+          top: 40px;
+          width: 145px;
+          border-bottom: 1px #00b38a solid;
+          left: 0px;
+
+          /* height: 200px; 
+            background-color: seagreen; */
+          &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -6px;
+            top: -11px;
+            border: 6px solid transparent;
+            /* border-color: red pink skyblue sandybrown; */
+            border-bottom-color: #00b38a;
+          }
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -6px;
+            top: -10px;
+            border: 6px solid transparent;
+            /* border-color: red pink skyblue sandybrown; */
+            border-bottom-color: white;
+          }
+        }
+
+      }
+
+
+
+      .linBox2 {
+        // border: 1px solid skyblue;
+        position: relative;
+        display: block;
+
+        .linInp {
+          height: 44px;
+          width: 290px;
+          border: none;
+          border-bottom: 1px solid #ededed;
+          outline: 0;
+          margin-top: 20px;
+
+          &::-webkit-input-placeholder {
+            font-size: 14px;
+            color: #999;
+          }
+
+
+        }
+
+
+        .tip {
+          background: url(../images/info_03c90e8.png) no-repeat;
+          line-height: 18px;
+          // height: 20px;
+          display: block;
+          margin-top: 5px;
+          line-height: 18px;
+          font-size: 12px;
+          padding-left: 20px;
+          color: #fd5f39;
+          background-size: 14px;
+          // display: none;
+        }
+
+
+        .span1 {
+          position: absolute;
+          top: 21px;
+          line-height: 44px;
+          display: block;
+          width: 73px;
+
+          &::after {
+            position: absolute;
+            top: 18px;
+            right: 8px;
+
+            display: block;
+            content: "";
+            width: 10px;
+            height: 5px;
+            background: no-repeat url(../images/small-arrow.png);
+
+          }
+
+        }
+
+        .logg {
+          position: relative;
+
+          .linInp2 {
+            height: 44px;
+            width: 290px;
+            border: none;
+            border-bottom: 1px solid #ededed;
+            outline: 0;
+            margin-top: 20px;
+
+            &::-webkit-input-placeholder {
+              font-size: 14px;
+              color: #999;
+            }
+
+            width: 210px;
+            padding-right: 80px;
+
+          }
+
+          .tip2 {
+            background: url(../images/info_03c90e8.png) no-repeat;
+            line-height: 18px;
+            // height: 20px;
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            line-height: 18px;
+            font-size: 12px;
+            padding-left: 20px;
+            color: #fd5f39;
+            background-size: 14px;
+            // display: none;
+          }
+
+          a {
+            text-decoration: none;
+            color: #00b38a;
+            float: right;
+            font-size: 14px;
+          }
+
+
+        }
+
+        .log {
+          width: 290px;
+          height: 46px;
+          border: none;
+          border: 1px solid #00b38a;
+          background-color: #00b38a;
+          color: white;
+          cursor: pointer;
+          outline: none;
+          font-size: 18px;
+          border-radius: 2px;
+          margin-top: 25px;
+
+
+        }
+      }
+
+      .linBox {
+        // border: 1px solid slateblue;
+        position: relative;
+        display: none;
+
+        .linInp {
+
+          height: 44px;
+          width: 290px;
+          border: none;
+          border-bottom: 1px solid #ededed;
+          outline: 0;
+          margin-top: 20px;
+
+          &::-webkit-input-placeholder {
+            font-size: 14px;
+            color: #999;
+          }
+
+          // &:focus {
+          //   outline: none;
+          // }
+          &:first-child {
+            text-indent: 73px;
+          }
+
+
+        }
+
+
+        .tip {
+          background: url(../images/info_03c90e8.png) no-repeat;
+          line-height: 18px;
+          // height: 20px;
+          display: block;
+          margin-top: 5px;
+          line-height: 18px;
+          font-size: 12px;
+          padding-left: 20px;
+          color: #fd5f39;
+          background-size: 14px;
+          display: none;
+        }
+
+
+        .span1 {
+          position: absolute;
+          top: 21px;
+          line-height: 44px;
+          display: block;
+          width: 73px;
+
+          &::after {
+            position: absolute;
+            top: 18px;
+            right: 8px;
+
+            display: block;
+            content: "";
+            width: 10px;
+            height: 5px;
+            background: no-repeat url(../images/small-arrow.png);
+
+          }
+
+        }
+
+        .logg {
+          position: relative;
+
+          .linInp2 {
+            height: 44px;
+            width: 290px;
+            border: none;
+            border-bottom: 1px solid #ededed;
+            outline: 0;
+            margin-top: 20px;
+
+            &::-webkit-input-placeholder {
+              font-size: 14px;
+              color: #999;
+            }
+
+            width: 210px;
+            padding-right: 80px;
+
+          }
+
+          .tip2 {
+            background: url(../images/info_03c90e8.png) no-repeat;
+            line-height: 18px;
+            // height: 20px;
+            display: block;
+            margin-top: 5px;
+            line-height: 18px;
+            font-size: 12px;
+            padding-left: 20px;
+            color: #fd5f39;
+            background-size: 14px;
+            display: none;
+          }
+
+          .but {
+            position: absolute;
+            top: 21px;
+            right: 0px;
+            width: 80px;
+            height: 43px;
+            border: none;
+            background-color: transparent;
+            color: #00b38a;
+            cursor: pointer;
+            outline: none;
+          }
+
+        }
+
+        .log {
+          width: 290px;
+          height: 46px;
+          border: none;
+          border: 1px solid #00b38a;
+          background-color: #00b38a;
+          color: white;
+          cursor: pointer;
+          outline: none;
+          font-size: 18px;
+          border-radius: 2px;
+          margin-top: 25px;
+
+
+        }
+      }
+
+
+
+    }
+
+    .inpLeft2 {
+      position: absolute;
+      display: none;
+      z-index: -1;
+      top: 52px;
+      left: 0px;
+      .fl();
+      width: 416px;
+      height: 277px;
+
+      .inp2Con {
+        margin: 41px 123px;
+
+        .inp2Txt {
+          margin-top: 10px;
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: #666;
+          text-align: center;
+        }
+      }
+
+
+    }
+
+    .inpRight {
+      position: relative;
+      border-left: 1px dashed #ededed;
+      .fr();
+      margin-right: 12px;
+
+      .span1 {
+        display: block;
+        position: absolute;
+        top: 119px;
+        left: -7px;
+        font-size: 14px;
+        color: #ededed;
+        width: 14px;
+        line-height: 14px;
+        background: white;
+      }
+
+      .rigBox {
+        font-size: 14px;
+        width: 217px;
+        height: 250px;
+        // background-color: pink;
+        margin-top: 64px;
+        padding-left: 52px;
+
+        .txt1 {
+          padding-bottom: 8px;
+        }
+
+        .txt2 {
+          display: block;
+          font-size: 16px;
+          color: #00b38a;
+          text-decoration: none;
+          background: url(../images/icon-arrow-right_ea91505.png) no-repeat;
+          background-position: 68px 4px;
+
+          &:hover {
+            text-decoration: underline;
+
+          }
+        }
+
+        .txt3 {
+          margin-top: 44px;
+          padding-bottom: 8px;
+        }
+
+        .txt4 {
+          .a1 {
+            display: inline-block;
+            background: url(../images/icon-sina@2x_85ef769.png) no-repeat;
+            width: 20px;
+            height: 16px;
+            background-size: contain;
+            &:hover{
+              background: url(../images/icon-sina-hover@2x_9d6e4ff.png)no-repeat;
+              background-size: contain;
+            }
+          }
+          .a2 {
+            display: inline-block;
+            background: url(../images/icon-wechat@2x_68c86d1.png) no-repeat;
+            width: 20px;
+            height: 16px;
+            background-size: contain;
+            margin-left: 22px;
+            &:hover{
+              background: url(../images/icon-wechat-hover@2x_3e6d16a.png)no-repeat;
+              background-size: contain;
+            }
+          }
+          .a3 {
+            display: inline-block;
+            background: url(../images/icon-tencent@2x_4a0f2ec.png) no-repeat;
+            width: 20px;
+            height: 16px;
+            background-size: contain;
+            margin-left: 22px;
+            &:hover{
+              background: url(../images/icon-tencent-hover@2x_241cfc3.png)no-repeat;
+              background-size: contain;
+            }
+          }
+          .a4 {
+            display: inline-block;
+            background: url(../images/icon-baidu@2x_68a573d.png) no-repeat;
+            width: 20px;
+            height: 16px;
+            background-size: contain;
+            margin-left: 22px;
+            &:hover{
+              background: url(../images/icon-baidu-hover@2x_858345c.png)no-repeat;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
